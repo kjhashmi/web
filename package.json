@@ -1,0 +1,17 @@
+{
+  "name": "gold-coworking-website",
+  "version": "1.0.0",
+  "description": "Gold Co-working Space Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "build": "echo 'No build step needed for static site'"
+  },
+  "keywords": ["coworking", "website", "static"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

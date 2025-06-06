@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Co-working Space Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i data-lucide="star"></i>
+                </div>
+                <span class="brand-text">Gold Co-working</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#facilities" class="nav-link" data-section="facilities">Facilities</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon hidden"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden">
+            <div class="mobile-nav-links">
+                <a href="#home" class="mobile-nav-link active" data-section="home">Home</a>
+                <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+                <a href="#facilities" class="mobile-nav-link" data-section="facilities">Facilities</a>
+                <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gold-text">Gold</span><br>
+                        Co-working
+                    </h1>
+                    <p class="hero-description">
+                        Experience luxury co-working with world-class facilities. From private offices to wellness amenities, 
+                        everything you need to work, relax, and thrive.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('facilities')">
+                            <span>Explore Facilities</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('contact')">
+                            Book a Tour
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Members</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Facilities</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Access</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/3182826/pexels-photo-3182826.jpeg" 
+                             alt="Modern co-working space" class="hero-img">
+                    </div>
+                    <div class="hero-badge">
+                        <div class="badge-content">
+                            <i data-lucide="check-circle"></i>
+                            <div>
+                                <div class="badge-title">Premium Location</div>
+                                <div class="badge-subtitle">City Center Access</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Why Choose <span class="gold-text">Gold Co-working</span>?
+                </h2>
+                <p class="section-description">
+                    We've redefined the co-working experience by combining productivity with luxury, 
+                    creating an environment where business meets wellness.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Experience</h3>
+                    <p class="feature-description">
+                        Luxury amenities and world-class facilities designed to enhance your work experience 
+                        and provide the perfect work-life balance.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="feature-title">Vibrant Community</h3>
+                    <p class="feature-description">
+                        Connect with like-minded professionals, entrepreneurs, and innovators in our 
+                        collaborative and inspiring environment.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="feature-title">Secure & Reliable</h3>
+                    <p class="feature-description">
+                        24/7 security, CCTV surveillance, and secure access ensure your peace of mind 
+                        while you focus on what matters most.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    World-Class <span class="gold-text">Facilities</span>
+                </h2>
+                <p class="section-description">
+                    From essential work spaces to luxury wellness amenities, we provide everything 
+                    you need for a productive and balanced lifestyle.
+                </p>
+            </div>
+
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="facility-title">Shared Space</h3>
+                    <p class="facility-description">Open collaborative workspace for networking and productivity</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <h3 class="facility-title">Private Office</h3>
+                    <p class="facility-description">Fully furnished private offices for teams and individuals</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="message-square"></i>
+                    </div>
+                    <h3 class="facility-title">Meeting Rooms</h3>
+                    <p class="facility-description">Professional meeting spaces with modern AV equipment</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="phone-call"></i>
+                    </div>
+                    <h3 class="facility-title">Phone Booths</h3>
+                    <p class="facility-description">Soundproof booths for private calls and video conferences</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="dumbbell"></i>
+                    </div>
+                    <h3 class="facility-title">Gym</h3>
+                    <p class="facility-description">Fully equipped fitness center to keep you active and healthy</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="waves"></i>
+                    </div>
+                    <h3 class="facility-title">Spa</h3>
+                    <p class="facility-description">Relaxation and wellness facilities for stress relief</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="bath"></i>
+                    </div>
+                    <h3 class="facility-title">Swimming Pool</h3>
+                    <p class="facility-description">Olympic-size pool for exercise and recreation</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="droplets"></i>
+                    </div>
+                    <h3 class="facility-title">Jacuzzi</h3>
+                    <p class="facility-description">Hot tub for ultimate relaxation after work</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="droplets"></i>
+                    </div>
+                    <h3 class="facility-title">Shower Room</h3>
+                    <p class="facility-description">Clean, modern shower facilities with premium amenities</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="gamepad-2"></i>
+                    </div>
+                    <h3 class="facility-title">Snooker Rooms</h3>
+                    <p class="facility-description">Professional snooker tables for recreation and networking</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="car"></i>
+                    </div>
+                    <h3 class="facility-title">Car Parking</h3>
+                    <p class="facility-description">Free secure parking spaces for all vehicles</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="bike"></i>
+                    </div>
+                    <h3 class="facility-title">Bike Parking</h3>
+                    <p class="facility-description">Dedicated bike storage with security features</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3 class="facility-title">Prayer Area</h3>
+                    <p class="facility-description">Peaceful multi-faith prayer and meditation space</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="facility-title">24/7 Security</h3>
+                    <p class="facility-description">Round-the-clock professional security personnel</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i data-lucide="camera"></i>
+                    </div>
+                    <h3 class="facility-title">CCTV Coverage</h3>
+                    <p class="facility-description">Complete surveillance system for maximum security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-header">
+                        <h2 class="section-title">
+                            Ready to Join <span class="gold-text">Gold Co-working</span>?
+                        </h2>
+                        <p class="section-description">
+                            Experience the future of co-working. Book a tour today and discover 
+                            how we can elevate your work experience.
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-label">Prime Location</div>
+                                <div class="contact-value">123 Business District, City Center</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-label">Call Us</div>
+                                <div class="contact-value">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-label">Email Us</div>
+                                <div class="contact-value">hello@goldcoworking.com</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-label">Access Hours</div>
+                                <div class="contact-value">24/7 Access for Members</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary full-width">
+                            Book Your Tour Today
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <span class="brand-text">Gold Co-working</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2024 Gold Co-working. All rights reserved.</p>
+                    <p class="footer-tagline">Elevating your work experience to new heights.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
